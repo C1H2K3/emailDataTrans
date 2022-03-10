@@ -306,7 +306,16 @@ eml_mysql.emlsql_run()
 
 ##### 运行结果
 ##### eml_mysql.emlsql_run()运行结果
-
+```python
+2022-02-14 14:26:20
+>>>*文件/xxxxxxx/xxxxx/xxx[测试]转发_转发:.eml成功存入数据库*, time:Mon, 14 Feb 2022 14:26:20 +0800
+2022-01-17 17:42:10
+>>>*文件/xxxxxxx/xxxxx/xxx[测试]报告.eml成功存入数据库*, time:17 Jan 2022 17:42:10 +0800
+2022-01-17 07:51:25
+>>>*文件/xxxxxxx/xxxxx/xxx[测试]继续升温.eml成功存入数据库*, time:17 Jan 2022 07:51:25 +0800
+...
+>>>*[3].已成功将数据存入mysql*
+```
 <br/>
 <font face="黑体" color=black size=2>在执行完emlsql_run后, 打开MySQL查看email表: </font>
 
