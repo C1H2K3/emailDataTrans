@@ -51,7 +51,7 @@ poplib, email, zipfile, patoolib, datetime, pymysql, os, shutil
   <tr/>
 </table>
 
-**(一) class_attparse.py**
+**(二) class_attparse.py**
 <br/>
 <font face = "黑体" color=black size=2>功能主要是解析eml格式的附件、解压zip格式的附件。</font>
 
@@ -83,7 +83,7 @@ poplib, email, zipfile, patoolib, datetime, pymysql, os, shutil
   </tr>
 </table>
     
-    
+**（三）eml_mysql.py**
     
     
     
