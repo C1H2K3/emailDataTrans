@@ -26,7 +26,6 @@ poplib, email, zipfile, patoolib, datetime, pymysql, os, shutil
     <td>接口说明</td>
     <td>参数说明</td>
     <td>返回值</td>
-    <td>NONE</td>
   </tr>
   <tr>
     <td rowspan="1">1</td>
