@@ -176,8 +176,12 @@ Messages: xx. Size: xxxxxxx
 ```
 ##### (2).class_download.downatt_run运行结果
 ```python
->>>*邮件附件/xxxxxxx/xxxxx/xxx/.eml成功存入本地目标路径*, time:
-
+>>>*邮件附件/xxxxxxx/xxxxx/xxx/转发: 转发: .eml成功存入本地目标路径*, time:2022-03-09 10:23:04.753775
+>>>*邮件附件/xxxxxxx/xxxxx/xxx/打包.打包.zip成功存入本地目标路径*, time:2022-03-09 10:23:05.777777
+>>>*邮件附件/xxxxxxx/xxxxx/xxx/表格.csv成功存入本地目标路径*, time:2022-03-09 10:23:06.141592
+>>>*邮件附件/xxxxxxx/xxxxx/xxx/文档.pdf成功存入本地目标路径*, time:2022-03-09 10:23:07.718281
+>>>*邮件附件/xxxxxxx/xxxxx/xxx/图片.png成功存入本地目标路径*, time:2022-03-09 10:23:08.563574
+>>>*[3].已成功将所有目标邮件附件存入本地*
 ```
 
 
