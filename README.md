@@ -15,7 +15,7 @@ poplib, email, zipfile, patoolib, datetime, pymysql, os, shutil
 
 
 ## 接口说明
-** (一) class_download.py**
+**(一) class_download.py**
 <br/>
 <font face = "黑体" color=black size=2>功能主要是下载满足时间要求的邮件及其附件。</font>
 
@@ -39,6 +39,15 @@ poplib, email, zipfile, patoolib, datetime, pymysql, os, shutil
       -
     </td>
   </tr>
+  <tr>
+    <td rowspan="1">2</td>
+    <td>downatt</td>
+    <td>读取本地eml的原始文本, 从中解析出附件并保存到本地中</td>
+    <td>:param target_path: str,<br/> 本地eml存储路径, eg./xxxxxxxxx/xxxxxxx/xxxxx/xxx
+    <td>
+      -
+    <td/>
+  <tr/>
 </table>
     
     
