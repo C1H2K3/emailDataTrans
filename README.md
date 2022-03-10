@@ -33,6 +33,7 @@ poplib, email, zipfile, patoolib, datetime, pymysql, os, shutil
     <td>以eml格式下载指定邮箱邮件到本地</td>
     <td>:param mail_adress: str, <br/> 邮箱账号, eg.xxxxxxx@qq.com<br/>
         :param mail_passwd: str, <br/> 邮箱密码, eg.xxxxxxx<br/>
+        :param pop3_server: str, <br/> 收件服务器, eg.pop.exmail.qq.com<br/>
         :param time_judge: str, <br/> 时间阈值, 下载晚于该时间的邮件, 输入格式: '%Y-%m-%d %H:%M:%S'<br/>
     </td>
     <td>
