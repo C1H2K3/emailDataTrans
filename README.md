@@ -145,6 +145,27 @@ Messages: xx. Size: xxxxxxx
 >>>请输入邮件本地存储路径[若无该路径则会在当前路径下新建一个]: /xxxxxxx/xxxxx/xxx
 ```
 
+##### (2).class_download.Downatt_run()输入示例
+```python
+>>>请输入eml文件本地存储路径: /xxxxxxx/xxxxx/xxx
+>>>[1].目录存在, 准备读文件:
+>>>已获得第1个eml文件/xxxxxxx/xxxxx/xxx/Steam农历新年特卖现已盛大开幕!还有专门为您推荐的特别优惠!.eml
+>>>已获得第2个eml文件/xxxxxxx/xxxxx/xxx/感谢您在Steam上的购买!.eml
+>>>已获得第3个eml文件/xxxxxxx/xxxxx/xxx/已收到您的退款申请.eml
+>>>已获得第4个eml文件/xxxxxxx/xxxxx/xxx/您的退款申请.拒绝.eml
+...
+>>>[2].已成功得到目标路径下的所有eml文件
+>>>开始下载邮件附件到本地
+>>>请输入附件保存路径: /xxxxxxx/xxxxx/xxx
+```
+
+##### 运行结果
+##### (1).class_download.downeml_run运行结果
+
+##### (2).class_download.downatt_run运行结果
+
+
+
     
     
     
