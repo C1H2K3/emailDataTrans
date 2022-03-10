@@ -161,9 +161,24 @@ Messages: xx. Size: xxxxxxx
 
 ##### 运行结果
 ##### (1).class_download.downeml_run运行结果
-
+```python
+2022-03-06 14:26:20 比给定时间阈值更晚, 进行邮件下载
+>>>邮件'<Hollow Knight 购买成功>'存入本地成功*, time:2022-02-14 14:26:20
+*cmd* 'RETR 7'
+2022-02-28 15:36:28 比给定时间阈值更晚, 进行邮件下载
+>>>邮件'<Sekiro: Shadows Die Twice 购买成功>'存入本地成功*, time:2022-02-28 15:36:28
+*cmd* 'RETR 6'
+...
+2022-02-11 17:15:33 比给定时间阈值更早, 不进行邮件下载
+*cmd* 'RETR 3'
+2022-02-01 00:00:00 比给定时间阈值更早, 不进行邮件下载
+*cmd* 'RETR 2'
+```
 ##### (2).class_download.downatt_run运行结果
+```python
+>>>*邮件附件/xxxxxxx/xxxxx/xxx/.eml成功存入本地目标路径*, time:
 
+```
 
 
     
