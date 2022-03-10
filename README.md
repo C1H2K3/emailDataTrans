@@ -128,8 +128,23 @@ class_download.downeml_run()
 class_download.downatt_run()
 
 ```
-    
-    
+##### 输入过程示例
+##### (1).class_download.downeml_run()输入示例
+```python
+>>>请输入邮箱账号: xxxxxxx@qq.com
+>>>请输入邮箱密码: xxxxxxx
+>>>请输入邮箱收件服务器端口: pop.exmail.qq.com
+>>>请输入一个日期(早于该日期的邮件将不会被下载)[输入格式: '%Y-%m-%d %H:%M:%S']: 2022-02-14 09:13:00
++OK QQMail POP3 Server v1.0 Service Ready(QQMail v2.0)
+*cmd* 'USER xxxxxxx@qq.com'
+*cmd* 'PASS xxxxxxx'
+*cmd* 'STAT'
+*stat* [b'+OK', b'xx', b'xxxxxxx']
+Messages: xx. Size: xxxxxxx
+*cmd* 'LIST'
+>>>请输入邮件本地存储路径[若无该路径则会在当前路径下新建一个]: /xxxxxxx/xxxxx/xxx
+```
+
     
     
     
