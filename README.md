@@ -15,12 +15,12 @@ poplib, email, zipfile, patoolib, datetime, pymysql, os, shutil
 .
 ├── emailDownParse
 │   ├── __init__.py
-│   ├── class_download.py
-│   ├── class_attparse.py
-│   └── eml_mysql.py
+│   ├── class_download.py                   将目标邮件、附件保存到本地
+│   ├── class_attparse.py                   循环解析附件eml、循环解压附件zip
+│   └── eml_mysql.py                        将eml元数据信息存储到MySQL中
 ├── README.md
 ├── img
-│   └── pictures
+│   └── pictures                            存储README中所需要的图片
 ```
 
 ## 接口说明
