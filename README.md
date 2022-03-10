@@ -12,6 +12,7 @@ poplib, email, zipfile, patoolib, datetime, pymysql, os, shutil
 ```
 ## 目录结构
 <br/>
+```python
 .
 ├── emailDownParse
 │   ├── __init__.py
@@ -21,6 +22,7 @@ poplib, email, zipfile, patoolib, datetime, pymysql, os, shutil
 ├── README.md
 ├── img
 │   └── pictures
+```
 
 ## 接口说明
 **（一）class_download.py**
