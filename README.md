@@ -152,7 +152,6 @@ Messages: xx. Size: xxxxxxx
 >>>已获得第1个eml文件/xxxxxxx/xxxxx/xxx/Steam农历新年特卖现已盛大开幕!还有专门为您推荐的特别优惠!.eml
 >>>已获得第2个eml文件/xxxxxxx/xxxxx/xxx/感谢您在Steam上的购买!.eml
 >>>已获得第3个eml文件/xxxxxxx/xxxxx/xxx/已收到您的退款申请.eml
->>>已获得第4个eml文件/xxxxxxx/xxxxx/xxx/您的退款申请.拒绝.eml
 ...
 >>>[2].已成功得到目标路径下的所有eml文件
 >>>开始下载邮件附件到本地
@@ -184,9 +183,45 @@ Messages: xx. Size: xxxxxxx
 >>>*[3].已成功将所有目标邮件附件存入本地*
 ```
 
+## (2).导入class_attparse, 完成基于DFS的eml格式附件循环解析、基于DFS的zip格式附件的循环解压
+##### 示例代码
+```python
+# -*-coding:utf-8-*-
+from emailDownParse import class_attparse
+# 基于DFS的eml格式附件的循环解析
+class_attparse.uneml_run()
+# 基于DFS的zip格式附件的循环解压
+class_attparse.unzip_run()
+```
+##### 输入过程示例
+##### (1).class_attparse.uneml_run()输入示例
+```python
+>>>请输入附件eml文件的本地存储路径: /xxxxxxx/xxxxx/xxx
+>>>[1].目录存在, 准备读文件:
+>>>已获得第1个eml文件/xxxxxxx/xxxxx/xxx/您的退款申请.拒绝.eml
+>>>已获得第2个eml文件/xxxxxxx/xxxxx/xxx/try again.eml
+...
+>>>[2].已成功得到目标路径下所有eml文件
+>>>开始下载邮件附件到本地 ......
+```
+##### (2).class_attparse.unzip_run()输入示例
+```python
+>>>请输入附件zip文件本地存储路径: /xxxxxxx/xxxxx/xxx
+>>>[1].目录已存在, 准备读文件:
+>>>已获得第1个zip文件/xxxxxxx/xxxxx/xxx/探究系列.zip
+>>>已获得第2个zip文件/xxxxxxx/xxxxx/xxx/研究报告.zip
+>>>[2].已成功得到目标路径下所有zip文件
 
-    
-    
+>>>开始解压zip到本地...
+```
+
+##### 运行结果
+##### (1).class_attparse.uneml_run()运行结果
+```python
+
+```
+##### (2).class_attparse.unzip_run()运行结果
+
     
     
     
