@@ -210,8 +210,32 @@ class Downatt(object):
     return ttp
 def downeml_run():
   testmail_address = input(">>>请输入邮箱账号: ")
+  testmail_passwd = input(">>>请输入邮箱密码: ")
+  pop3_server = input("请输入邮箱服务器端口: ")
+  testserver = poplib.POP3_SSL(pop3_server)
+  test_downeml = Downeml(testmail_address, testmail_passwd, testserver)
+  time_judge = input(">>>请输入一个日期(早于该日期的邮件将不会被下载)[输入格式: '%Y-%m-%d %H:%M:%S']: ")
+  test_downeml.get_email_file(testserver, time_judge)
   
-  
+ def Downatt_run():
+  test_att = Downatt()
+  target_path = input(">>>请输入eml文件本地存储路径: ")
+  if os.path.exists(target_path):
+    print(">>>[1].目录存在, 准备读文件: \n")
+    if test_att.List_FilePATHS(target_path):
+      print(">>>[2].已成功得到所有eml文件: \n")
+      print(">>>开始下载邮件附件到本地")
+      if test_att.down_allatt():
+        print(">>>*[3].已成功将所有目标邮件附件存入本地*: \n")
+        print("=====================================\n")
+      else:
+        print(">>>*[-3].未成功将所有目标邮件附件存入本地*: \n")
+
+    else:
+      print(">>>*[-2].未成功得到所有eml文件: \n")
+  else:
+    print(">>>[-1].目录不存在, 请重新输入目录路径 \n")
+    print("=====================================\n")
   
   
       
