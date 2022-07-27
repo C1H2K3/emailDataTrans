@@ -239,6 +239,46 @@ def uneml_run():
         if test_uneml.List_FilePATHS(target_path):
             print(">>>[2].已成功得到所有eml文件: \n")
             print("开始下载邮件附件到本地")
+            if test_uneml.get_allemlatt(target_path, subemlpath) == False:
+                print("目标路径下存在 解析失败 的eml文件 \n")
+            else:
+                print("目标路径下所有eml文件都已完成解析 \n")
 
+        else:
+            print(">>>[-2].未成功得到所有eml文件: \n")
+    else:
+        print(">>>[-1].目录不存在, 请重新输入目录路径 \n")
+        print("=======================================\n")
+
+def unzip_run():
+    test_unzip = Unzip_att()
+    target_path = input(">>>请输入附加zip文件本地存储路径: ")
+    # 创建同级目录来存放解压完成的zip文件
+    os.chdir(os.path.abspath(os.path.dirname(target_path)))
+    newpath = "sorted_att"
+    if not os.path.exists(newpath):
+        os.makedirs(newpath)
+    os.chdir(newpath)
+    subzippath = "att_zip"
+    if not os.path.exists(subzippath):
+        os.makedirs(subzippath)
+    # subzippath即为存储父本zip的子目录路径
+    subzippath = os.path.abspath(os.path.dirname(target_path)) + '/' + newpath + '/' + subzippath
+    print(subzippath)
+    if os.path.exists(target_path):
+        print(">>>[1].目录存在, 准备读文件: \n")
+        if test_unzip.List_FilePATHS(target_path):
+            print(">>>[2].已成功得到所有zip文件: \n")
+            print("开始解压zip到本地")
+            if test_unzip.get_allzipres(target_path, subzippath) == False:
+                print("目标路径下存在 解压失败 的zip文件 \n")
+            else:
+                print("目标路径下所有zip文件都已完成解析 \n")
+
+        else:
+            print(">>>[-2].未成功得到所有zip文件: \n")
+    else:
+        print(">>>[-1].目录不存在, 请重新输入目录路径 \n")
+        print("=======================================\n")
 
 
