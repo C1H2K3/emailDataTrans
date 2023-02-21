@@ -236,6 +236,23 @@ class eml_mysql(object):
     def emlsql_run(): # 执行将本地eml元数据信息存储入库的操作
         test = eml_mysql()
         test.if_conn()
+        test.creat_mysql()
+        target_path = input(">>>请输入eml文件本地存储路径：")
+        init_id = int(input(">>>请输入起始文件的编号:"))
+        if os.path.exists(target_path):
+            print(">>>[1].目录存在,准备读文件:\n")
+            if test.List_FilePATHS(target_path):
+                print(">>>[2].已成功得到所有eml文件:\n")
+                if test.post_eml_mysql(init_id, target_path):
+                    print(">>>*[3].已成功将数据库存入mysql*:\n")
+                    print("===========================================\n")
+                else:
+                    print(">>>*[-3].未成功将数据库存入mysql*:\n")
+            else:
+                print(">>>[-2].未成功得到所有eml文件:\n")
+        else:
+            print(">>>[-1].目录不存在,请重新输入目录路径\n")
+            print("===========================================\n")            
                           
                           
                           
